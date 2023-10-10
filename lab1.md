@@ -1,4 +1,4 @@
-#Lab 1
+# Lab 1
 
 ![Image](cd_a.png)      
 * working directory: /home/lecture1
