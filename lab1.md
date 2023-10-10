@@ -1,3 +1,5 @@
+#Lab 1
+
 ![Image](cd_a.png)      
 * working directory: /home/lecture1
 * because there was no argument, the working directory was set to home. no output.
