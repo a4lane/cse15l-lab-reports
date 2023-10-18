@@ -22,22 +22,22 @@
   
 ![Image](ls_b.png)
 * working directory: /home/lecture1
-* with the argument 'messages', a directory, ls printed out the names of the four txt files inside messages
+* with the argument 'messages', a directory, ls printed out the names of each of the files inside messages, which in this case are 4 txt files
 * no error
 
 ![Image](ls_c.png)   
 * working directory: /home/lecture1
-* with a file argument passed to ls, just the one file is printed
+* with a file argument passed to ls, just the name of the file is printed
 * no error
   
 ![Image](cat_a.png)
 * working directory: /home/lecture1
-* with no argument passed to cat, nothing happens but the next command is not prompted. it goes into an infinite loop, and needs ^C to end it.
-* yes, this is an error because cat needs an argument
+* with no argument passed to cat, nothing appears to happen at first but it will duplicate any input given to the command line. 
+* this is not an error because there was no error message
   
 ![Image](cat_b.png)
 * working directory: /home/lecture1
-* cat is used to print the contents of a file, so when used on a directory there is no content to print. this just printed the name of the directory.
+* cat is used to print the contents of a file, so it won't work on a directory because 
 * I believe this is an error, because cat should be used on a file
   
 ![Image](cat_c.png)
