@@ -55,3 +55,9 @@ StringServer.java:
           }
       }
 
+
+
+![](add-message-1.png)
+* the method 
+![](add-message-2.png)
+
