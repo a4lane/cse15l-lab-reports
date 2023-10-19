@@ -67,3 +67,7 @@ StringServer.java:
 * this time, the updated URI seen in the screenshot is passed to handleRequest, which completes the same functions as the first time.
 * the String seen in the screenshot is added to the global array at its second index, and the index tracker is incremented.
 
+
+## Part 2
+
+
