@@ -1,10 +1,11 @@
 **Lab Report 2**
 
-#Part 1
-import java.io.IOException;
-import java.net.URI;
+#Part 1#
 
+StringServer.java:
 
+      import java.io.IOException;
+      import java.net.URI;
 
       class Handler implements URLHandler {
 
