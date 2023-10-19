@@ -8,9 +8,11 @@ class Handler implements URLHandler {
 
     public String displayList(String[] l){
         String output = "";
+        int count = 1;
         for (String s : l){
             if (s != null)
-                output += s + "\n";
+                output += count + ": "+ s + "\n";
+                count++;
         }
         return output;
     }
@@ -48,12 +50,12 @@ class Handler implements URLHandler {
 
         }
         else {
-            if (url.getPath().contains("/add")) {
+            if (url.getPath().contains("/add-message")) {
                 String[] parameters = url.getQuery().split("=");
                 if (parameters[0].equals("s")) {
                     list[index] = parameters[1];
                     index++;
-                    return String.format(parameters[1] + " has been added!\n");
+                    return String.format(displayList(list));
                 }
             }
             
