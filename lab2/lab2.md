@@ -79,6 +79,6 @@ StringServer.java:
 
 ## Part3
 
-These past couple of weeks I've learned how servers are built and run, and that its possible to do this just using java. 
+These past couple of weeks I've learned how servers are built and run, and that its possible to do this just using java. Requests can be handled by parsing the url for its path, query, etc. 
 
 
