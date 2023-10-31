@@ -58,7 +58,7 @@ StringServer.java:
 
 
 ![](add-message-1.png)
-* the method being called here is handleRequest, which calls getPath and getQuery, and finally displayList.
+* the main method is called to start the server; the next method being called here is handleRequest, which calls getPath and getQuery, and finally displayList.
 * the argument passed to handleRequest is the URI in the screenshot. The URI is parsed with the methods getPath, which returns the path component of the URL, and getQuery, which returns the query component. displayList is called, which prints the current list of messages, stored as a global array.
 * from this request, the String "hi" is added to the first index of the array, and the index tracker is incremented.
 
