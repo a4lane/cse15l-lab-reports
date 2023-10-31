@@ -70,12 +70,9 @@ StringServer.java:
 
 ## Part 2
 
-![](privatekey.png)
-
-![](publickey.png)
-
-![](ssh_login.png)
-
+![](public_1.png)
+![](public_2.png)
+![](private-new.png)
 
 ## Part3
 
