@@ -58,7 +58,7 @@ The new code has a temp variable to store one of the elements being reversed so 
 allisonlane@Allisons-Air docsearch % grep -c "terrorist" technical/911report/chapter-1.txt 
 10
 ```
-grep -c counts and displays the number of times a certain string appears in the given text file. This is useful because we can use wc, but that will count every word in a file and we may just want to know how many times one specific word is there.
+grep -c counts and displays the number of times a certain string appears in the given text file. This is useful because we can use wc, but that will count every word in a file and we may just want to know how many times one specific word is there.  
 (Source: the manual)
 
 ```
@@ -81,7 +81,7 @@ technical/911report/chapter-8.txt:47
 technical/911report/chapter-9.txt:11
 technical/911report/preface.txt:3
 ```
-Using grep -c on a group of text files prints the count of the number of occurences of the string in each respective file. This is useful instead of searching in each file one by one.
+Using grep -c on a group of text files prints the count of the number of occurences of the string in each respective file. This is useful instead of searching in each file one by one. 
 (Source: manual)
 
 *grep -i*
@@ -95,7 +95,7 @@ Many injured ED patients are screened with a BAC, which can help
 direct testing. Many tests would be improved by wording questions
 even higher risk subgroups. Many experts advocate focusing
 ```
-grep -i makes the search case-insensitive. This is useful when you want to search for a keyword but don't know if it will be at the beginning of sentences, or in some other casing convention. 
+grep -i makes the search case-insensitive. This is useful when you want to search for a keyword but don't know if it will be at the beginning of sentences, or in some other casing convention.   
 (Source: [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 ```
@@ -119,7 +119,7 @@ technical/911report/chapter-9.txt:12
 technical/911report/preface.txt:4
 ```
 
-The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "terrorist" with different cases, such as when it is at the beginning of a sentence, which is useful if you need a count of all instances of a string. 
+The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "terrorist" with different cases, such as when it is at the beginning of a sentence, which is useful if you need a count of all instances of a string.   
 (Source: manual & [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 
