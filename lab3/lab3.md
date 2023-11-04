@@ -53,7 +53,7 @@ The new code has a temp variable to store one of the elements being reversed so 
 ## Part 2 -  Researching Commands
 
 
-*grep -c*
+***grep -c***
 ```
 allisonlane@Allisons-Air docsearch % grep -c "terrorist" technical/911report/chapter-1.txt 
 10
@@ -82,9 +82,10 @@ technical/911report/chapter-9.txt:11
 technical/911report/preface.txt:3
 ```
 Using grep -c on a group of text files prints the count of the number of occurences of the string in each respective file. This is useful instead of searching in each file one by one. 
+  
 (Source: manual)
 
-*grep -i*
+***grep -i***
 ```
 allisonlane@Allisons-Air docsearch % grep -i "many" technical/government/Alcohol_Problems/Session2-PDF.txt
 Many patients in the emergency department (ED) have alcohol
