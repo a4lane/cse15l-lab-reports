@@ -21,3 +21,29 @@ Non-failure-inducing input:
     assertArrayEquals(new int[]{ 3 }, input1);
 }
 ```
+
+Symptom:
+![](symptoms.png)
+
+
+The Bug- Before:
+```
+static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = arr[arr.length - i - 1];
+    }
+  }
+```
+
+After:
+```
+ static void reverseInPlace(int[] arr) {
+    for(int i = 0; i < arr.length / 2; i += 1) {
+      int temp = arr[i];
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+```
+
+The new code has a temp variable to store one of the elements being reversed so that its not overwritten before being swapped.
