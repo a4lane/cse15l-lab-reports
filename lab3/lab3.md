@@ -82,8 +82,7 @@ technical/911report/chapter-9.txt:11
 technical/911report/preface.txt:3
 ```
 Using grep -c on a group of text files prints the count of the number of occurences of the string in each respective file. This is useful instead of searching in each file one by one. 
-  
-(Source: manual)
+  (Source: manual)
 
 ***grep -i***
 ```
