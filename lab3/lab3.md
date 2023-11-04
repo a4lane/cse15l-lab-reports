@@ -52,6 +52,8 @@ The new code has a temp variable to store one of the elements being reversed so 
 
 ## Part 2 -  Researching Commands
 
+
+*grep -c*
 ```
 allisonlane@Allisons-Air docsearch % grep -c "terrorist" technical/911report/chapter-1.txt 
 10
@@ -81,3 +83,46 @@ technical/911report/preface.txt:3
 ```
 Using grep -c on a group of text files prints the count of the number of occurences of the string in each respective file. This is useful instead of searching in each file one by one.
 (Source: manual)
+
+*grep -i*
+```
+allisonlane@Allisons-Air docsearch % grep -i "many" technical/government/Alcohol_Problems/Session2-PDF.txt
+Many patients in the emergency department (ED) have alcohol
+too many false positives. A test that is used to screen a
+other drug use, depression, and anxiety disorders. Many of the
+screening tests were developed outside the ED. Fortunately, many
+Many injured ED patients are screened with a BAC, which can help
+direct testing. Many tests would be improved by wording questions
+even higher risk subgroups. Many experts advocate focusing
+```
+grep -i makes the search case-insensitive. This is useful when you want to search for a keyword but don't know if it will be at the beginning of sentences, or in some other casing convention. 
+(Source: [](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
+
+```
+allisonlane@Allisons-Air docsearch % grep -ci "the" technical/911report/*.txt
+technical/911report/chapter-1.txt:323
+technical/911report/chapter-10.txt:361
+technical/911report/chapter-11.txt:567
+technical/911report/chapter-12.txt:893
+technical/911report/chapter-13.1.txt:704
+technical/911report/chapter-13.2.txt:501
+technical/911report/chapter-13.3.txt:699
+technical/911report/chapter-13.4.txt:1140
+technical/911report/chapter-13.5.txt:1526
+technical/911report/chapter-2.txt:566
+technical/911report/chapter-3.txt:1989
+technical/911report/chapter-5.txt:670
+technical/911report/chapter-6.txt:1122
+technical/911report/chapter-7.txt:907
+technical/911report/chapter-8.txt:669
+technical/911report/chapter-9.txt:1264
+technical/911report/preface.txt:71
+```
+
+The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "the" with different cases, which is useful if you need a count of all instances of a string. 
+(Source: manual & [](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
+
+
+
+
+
