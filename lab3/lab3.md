@@ -96,31 +96,31 @@ direct testing. Many tests would be improved by wording questions
 even higher risk subgroups. Many experts advocate focusing
 ```
 grep -i makes the search case-insensitive. This is useful when you want to search for a keyword but don't know if it will be at the beginning of sentences, or in some other casing convention. 
-(Source: [](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
+(Source: [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 ```
-allisonlane@Allisons-Air docsearch % grep -ci "the" technical/911report/*.txt
-technical/911report/chapter-1.txt:323
-technical/911report/chapter-10.txt:361
-technical/911report/chapter-11.txt:567
-technical/911report/chapter-12.txt:893
-technical/911report/chapter-13.1.txt:704
-technical/911report/chapter-13.2.txt:501
-technical/911report/chapter-13.3.txt:699
-technical/911report/chapter-13.4.txt:1140
-technical/911report/chapter-13.5.txt:1526
-technical/911report/chapter-2.txt:566
-technical/911report/chapter-3.txt:1989
-technical/911report/chapter-5.txt:670
-technical/911report/chapter-6.txt:1122
-technical/911report/chapter-7.txt:907
-technical/911report/chapter-8.txt:669
-technical/911report/chapter-9.txt:1264
-technical/911report/preface.txt:71
+allisonlane@Allisons-Air docsearch % grep -ci "terrorist" technical/911report/*.txt
+technical/911report/chapter-1.txt:10
+technical/911report/chapter-10.txt:25
+technical/911report/chapter-11.txt:33
+technical/911report/chapter-12.txt:106
+technical/911report/chapter-13.1.txt:19
+technical/911report/chapter-13.2.txt:11
+technical/911report/chapter-13.3.txt:27
+technical/911report/chapter-13.4.txt:57
+technical/911report/chapter-13.5.txt:50
+technical/911report/chapter-2.txt:19
+technical/911report/chapter-3.txt:130
+technical/911report/chapter-5.txt:30
+technical/911report/chapter-6.txt:55
+technical/911report/chapter-7.txt:9
+technical/911report/chapter-8.txt:47
+technical/911report/chapter-9.txt:12
+technical/911report/preface.txt:4
 ```
 
-The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "the" with different cases, which is useful if you need a count of all instances of a string. 
-(Source: manual & [](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
+The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "terrorist" with different cases, such as when it is at the beginning of a sentence, which is useful if you need a count of all instances of a string. 
+(Source: manual & [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 
 
