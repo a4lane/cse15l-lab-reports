@@ -130,6 +130,7 @@ allisonlane@Allisons-Air docsearch % grep --colour "Uruguay" technical/plos/jour
         performed particularly well. For example, Uruguay, Chile, Panama, and Cuba averaged,
 ```
 Screenshot to see colored text:
+![](colour_1.png)
 
 --colour colors the part of the line that matches the given string. Useful because it helps readability and quickly finding the target string in the output.
 (Source: manual)
@@ -172,6 +173,8 @@ technical/government/Media/Politician_Practices.txt:So it is perhaps understanda
 technical/government/Media/Politician_Practices.txt-director of the Atlanta Legal Aid Society, initially thought it was
 technical/government/Media/Politician_Practices.txt-a joke when he received a phone message from Governor Barnes saying
 ```
+Screenshot to see colored text:
+![](colour_2.png)
 Combining --colour with added context lines makes it easer to find the target string when you have a few lines for each hit to read through.   
 (Source: manual)
 
