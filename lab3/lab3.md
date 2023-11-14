@@ -98,27 +98,46 @@ grep -i makes the search case-insensitive. This is useful when you want to searc
 (Source: [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 ```
-allisonlane@Allisons-Air docsearch % grep -ci "terrorist" technical/911report/*.txt
-technical/911report/chapter-1.txt:10
-technical/911report/chapter-10.txt:25
-technical/911report/chapter-11.txt:33
-technical/911report/chapter-12.txt:106
-technical/911report/chapter-13.1.txt:19
-technical/911report/chapter-13.2.txt:11
-technical/911report/chapter-13.3.txt:27
-technical/911report/chapter-13.4.txt:57
-technical/911report/chapter-13.5.txt:50
-technical/911report/chapter-2.txt:19
-technical/911report/chapter-3.txt:130
-technical/911report/chapter-5.txt:30
-technical/911report/chapter-6.txt:55
-technical/911report/chapter-7.txt:9
-technical/911report/chapter-8.txt:47
-technical/911report/chapter-9.txt:12
-technical/911report/preface.txt:4
+allisonlane@Allisons-MacBook-Air docsearch % grep -i "modular" technical/*/*.txt
+technical/biomed/1471-2105-3-37.txt:        designed and developed the MASIA program and the modular
+technical/biomed/1471-2156-3-17.txt:        . The modular nature of the NPC structure has also
+technical/biomed/1471-2164-2-1.txt:          separate modular proteins that evolved by exon shuffling
+technical/biomed/1471-2164-2-2.txt:          (AtDB) and analyzed using SMART (Simple Modular
+technical/biomed/1471-2164-3-30.txt:        transmembrane segments [ 32 ] suggesting a modular gene
+technical/biomed/1471-2164-4-22.txt:          NCBI as well as the Simple Modular Architecture Research
+technical/biomed/1471-2199-2-10.txt:        domains are modular and can be effective when removed from
+technical/biomed/1471-2199-2-10.txt:        The yeast two-hybrid system exploits this modular
+technical/biomed/1471-2199-2-10.txt:        was modular, remaining a competent activator when grafted
+technical/biomed/1471-2199-2-10.txt:          Modularity of a peptide activator
+technical/biomed/1471-2199-2-10.txt:        modularity [ 21 ] . Nonetheless, the tendency for
+technical/biomed/1472-6793-1-15.txt:        voltage sensor of skeletal muscle is modular in function
+technical/biomed/gb-2001-2-4-research0010.txt:          modular power and/or the transition bias are varied over
+technical/biomed/gb-2001-2-7-research0024.txt:          (Smart Modular Architecture Research Tool) program [ 56].
+technical/biomed/gb-2001-2-9-research0035.txt:        curating information on physiological function and modular
+technical/biomed/gb-2001-2-9-research0035.txt:          Proteins as modular entities
+technical/biomed/gb-2001-2-9-research0035.txt:          proteins as modular entities where a module is defined as
+technical/biomed/gb-2001-2-9-research0035.txt:          modular assignments are based on analysis of protein
+technical/biomed/gb-2001-2-9-research0035.txt:          to four modules. Table 2contains a list of multimodular
+technical/biomed/gb-2001-2-9-research0035.txt:          the list. The majority of modular proteins, 217, contain
+technical/biomed/gb-2001-2-9-research0035.txt:          not shown). Other multimodular proteins appear to be a
+technical/biomed/gb-2001-2-9-research0035.txt:          E. coli unimodular aspartokinase
+technical/biomed/gb-2001-2-9-research0035.txt:          unimodular sequence-similar dehydrogenase. 
+technical/biomed/gb-2001-2-9-research0035.txt:          does contain a unimodular sequence-similar homoserine
+technical/biomed/gb-2001-2-9-research0035.txt:          be able to identify additional multimodular proteins.
+technical/biomed/gb-2001-2-9-research0035.txt:          modular entities. Half of the modules have been
+technical/biomed/gb-2001-2-9-research0035.txt:        modular entities where a module is at least 100 amino
+technical/biomed/gb-2002-3-12-research0071.txt:          understanding of the modularity of genomes and of the
+technical/biomed/gb-2002-3-5-research0025.txt:          modular structure that is easily adapted to bind
+technical/biomed/gb-2002-3-9-research0046.txt:          that class. The packages ensure that MAGE-ML is modular,
+technical/biomed/gb-2003-4-1-r5.txt:        constructed in a modular fashion, with
+technical/biomed/gb-2003-4-2-r14.txt:          an example of the modular-type entities asserted to be
+technical/biomed/gb-2003-4-8-r51.txt:        a common ancestral domain). This modular nature of proteins
+technical/plos/journal.pbio.0020267.txt:        lead to the genes that control the development or function of those modules. That modular
+technical/plos/journal.pbio.0020311.txt:        fungi in eukaryotes, these modular signaling systems involve a membrane-bound receptor
+technical/plos/journal.pbio.0030024.txt:        functions seem more modular than global. And there is no real separation between the mind
 ```
 
-The same search as in the grep -c example, this time making it case-insensitive as well. This alters the results by including instances of "terrorist" with different cases, such as when it is at the beginning of a sentence, which is useful if you need a count of all instances of a string.   
+A case-insensitive search for a string within multiple sub-directories. Results include instances of the string at the beginning of sentences (capitalized) as well as all lowercase instances.   
 (Source: manual & [https://developer.mozilla.org/en-US/blog/searching-code-with-grep/](https://developer.mozilla.org/en-US/blog/searching-code-with-grep/))
 
 
