@@ -47,8 +47,7 @@ After:
   }
 ```
 
-The new code has a temp variable to store one of the elements being reversed so that its not overwritten before being swapped.
-
+The buggy code was going through the entire array and swapping each element at i with the element at i - length - 1. This worked for the first length/2 elements in the array, but not for its second half because the first length/2 elements have already been overwritten and the original values lost. In the new solution, the loop iterates length/2 times and creates a temp variable that stores the value at index i, then overwrites index i with the value at index length - i- 1, then overwrites the value at index length - i - 1 with the the value of temp. 
 
 ## Part 2 -  Researching Commands: grep
 
