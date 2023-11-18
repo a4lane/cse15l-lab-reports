@@ -62,6 +62,7 @@ I pressed the up arrow to access my previous command, then ctrl-w twice to delet
 Keys pressed: `'i''d''o''n''e'<ESC><shift-;>'w''q'<enter>`    
 
 
+  
 With the cursor in the top left corner, pressing "i" enters insert mode and then I typed my commit message "done". ESC to enter normal mode, then :wq to save and exit the vim file. This adds the commit message and completes the commit.
 
 
