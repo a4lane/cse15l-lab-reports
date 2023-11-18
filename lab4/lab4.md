@@ -24,12 +24,14 @@ Keys pressed: `'b''a''s''h'<space>'t'<tab><enter>`
 I typed out "bash" and then t followed by tab, which autofilled to test.sh. Running this command ran the bash script which compiles and runs the .java files & junit tests.
 
 **Edit the code file to fix the failing test**
-![](step7-1.png)
+![](step7-1.png)  
+
 Keys pressed: `'v''i''m'<space>'L'<tab>'.''j''a''v''a'<enter>`
 
 Typed out "vim", and the the first letter of the file I wanted to edit 'L' followed by tab which autocompleted it to ListExamples (the point from which there are multiple possibilities). Then completed the file name with .java. This opened up the file in vim to edit.
 
-![](step7-2.png)
+![](step7-2.png)  
+
 Keys pressed: `'4''4''G''e''x''i''2'<ESC><shift-;>'w''q'<enter>`
 
 "44G" jumped the cursor to the 44th line, where the error was. "e" brought the cursor to the end of the current word, and then "x" deleted the character the cursor was on (1). "i" entered insert mode, and "2" inserts the character into the previous position. ESC enters normal mode, and then :wq saves and exits the file in vim. This successfully fixes the error in the java file and saves the new version where index1 is changed to index2.
