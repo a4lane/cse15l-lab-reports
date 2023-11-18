@@ -17,7 +17,8 @@ I typed out "git clone" and then pasted the ssh URL to my fork of the lab 7 repo
 Keys pressed: `'c''d'<space>'l'<tab><enter>`
 
 I typed out "cd" and then l followed by tab, which autofilled the command to "lab7/". This changed my working directory to ~/lab7.
-![]()
+
+
 Keys pressed: `'b''a''s''h'<space>'t'<tab><enter>`
 
 I typed out "bash" and then t followed by tab, which autofilled to test.sh. Running this command ran the bash script which compiles and runs the .java files & junit tests.
