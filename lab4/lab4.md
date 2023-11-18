@@ -57,7 +57,7 @@ Keys pressed: `<up><ctrl-w><ctrl-w>'c''o''m'<tab><enter>`
 I pressed the up arrow to access my previous command, then ctrl-w twice to delete the last 2 words. Then typed out "com", the point where "commit" is the only possible completion, and pressed tab to accomplish this. The command commits the changes of all files that have been staged, and opens a vim file that prompts for a commit message.
 
 ![](step9-3.png)
-![](lab4/step 9-3-1.png)  
+![](step%209-3-1.png)
 
 Keys pressed: `'i''d''o''n''e'<ESC><shift-;>'w''q'<enter>`    
 
