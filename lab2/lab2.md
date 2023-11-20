@@ -70,7 +70,7 @@ StringServer.java:
 
 ## Part 2
 
-![](public_1.png)
+![](public-1.png)
 ![](public_2.png)
 ![](private-new.png)
 
