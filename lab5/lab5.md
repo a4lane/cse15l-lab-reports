@@ -22,7 +22,8 @@ I assumed every student submission would have correctly named files, so I didn't
 
 Setup:
 
-directory structure:
+directory structure: 
+
 ![](d-structure.png)
 
 
@@ -109,6 +110,8 @@ public class TestListExamples {
 }
 ```
 
+Line that triggered the bug:  
+![](command.png)
 
 
 To fix the bug, I added this block of code:
