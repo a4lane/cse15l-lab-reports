@@ -123,3 +123,9 @@ then
 fi
 ```
 to grade.sh directly after cloning the student submission.
+
+
+## Part 2
+
+One thing I learned is that you can run shell commands directly from java using process builders. With this you could do pretty much every thing in a java file that you would use bash for.
+
