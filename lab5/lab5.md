@@ -1,4 +1,5 @@
 # Lab Report 5
+## Part 1
 
 **OP:** There's something going wrong when I try to run the grading script; its worked for every other student submission, but running it on this one causes all these errors. I'm guessing it has to do with the students' files? Here's a screenshot of the symptoms:
 ![](symptom.png)
@@ -109,3 +110,13 @@ public class TestListExamples {
 ```
 
 
+
+To fix the bug, I added this block of code:
+```
+if [[ ! -f ListExamples.java ]]
+then    
+    echo "ListExamples.java does not exist"
+    exit
+fi
+```
+to grade.sh directly after cloning the student submission.
